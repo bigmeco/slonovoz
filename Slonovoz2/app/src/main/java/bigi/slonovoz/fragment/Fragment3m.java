@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import bigi.slonovoz.Ename;
 import bigi.slonovoz.R;
 
 
@@ -53,7 +54,7 @@ public class Fragment3m extends Fragment {
                     time = 0;
                     loaders = 0;
                 }
-                decision = time * 490;
+                decision = time * new Ename.GAMZ3m.getCode();
                 loaders = (time * loaders)*400;
                 decision = decision + loaders;
 
