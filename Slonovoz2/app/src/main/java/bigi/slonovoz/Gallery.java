@@ -41,6 +41,9 @@ public class Gallery extends AppCompatActivity implements ViewSwitcher.ViewFacto
         mImageSwitcher = (ImageSwitcher) findViewById(R.id.imageSwitcher);
         mImageSwitcher.setFactory(this);
 
+        Ename enumTest = Ename.FRIDAY;
+
+
         Animation inAnimation = new AlphaAnimation(0, 1);
         inAnimation.setDuration(800);
         Animation outAnimation = new AlphaAnimation(1, 0);
@@ -48,7 +51,7 @@ public class Gallery extends AppCompatActivity implements ViewSwitcher.ViewFacto
 
         mImageSwitcher.setInAnimation(inAnimation);
         mImageSwitcher.setOutAnimation(outAnimation);
-
+        Ename enumTest = Ename.FRIDAY;
         mImageSwitcher.setImageResource(mImageIds[0]);
         mGestureDetector = new GestureDetector(this, this);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);

@@ -1,3 +1,5 @@
+package bigi.slonovoz;
+
 public enum Ename {
     MONDAY,
     TUESDAY,
